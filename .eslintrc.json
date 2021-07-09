@@ -1,0 +1,74 @@
+{
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"env": {
+		"shared-node-browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"airbnb-typescript",
+		"airbnb/hooks",
+		"next",
+		"next/core-web-vitals",
+		"plugin:prettier/recommended"
+	],
+	"overrides": [],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": "./tsconfig.eslint.json",
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true,
+			"impliedStrict": true
+		}
+	},
+	"plugins": [
+		"react",
+		"react-hooks",
+		"jsx-a11y",
+		"import",
+		"sort-keys-fix",
+		"sort-imports-es6-autofix",
+		"@typescript-eslint"
+	],
+	"root": true,
+	"rules": {
+		"react/react-in-jsx-scope": "off" /* collides with NextJS and Ionic globals */,
+		"react/prop-types": "off" /* prone to false positives */,
+		"import/prefer-default-export": "off" /* annoyance: future expandability often intentional */,
+		"react/jsx-filename-extension": [2, { "extensions": [".jsx", ".tsx"] }] /* airbnb: allow .tsx */,
+		"react/jsx-props-no-spreading": "off" /* airbnb: allow spread */,
+		"import/order": "off" /* airbnb: we use autofix */,
+		"no-console": "off" /* airbnb: annoyance */,
+		"no-debugger": "off" /* airbnb: annoyance */,
+		"no-dupe-else-if": "warn" /* airbnb: not enabled yet */,
+		"no-empty": ["error", { "allowEmptyCatch": true }] /* airbnb: added allowEmptyCatch option */,
+		"no-import-assign": "warn" /* airbnb: not enabled yet */,
+		"sort-imports-es6-autofix/sort-imports-es6": [
+			/* sort-imports-es6-autofix: automatically sort imports */
+			"warn",
+			{
+				/* allowSeparatedGroups: false, /* sort-imports-es6-autofix: incompatible argument */
+				"ignoreCase": false,
+				/* ignoreDeclarationSort: false, /* sort-imports-es6-autofix: incompatible argument */
+				"ignoreMemberSort": false,
+				"memberSyntaxSortOrder": ["all", "multiple", "single", "none"]
+			}
+		],
+		"sort-keys": [
+			"warn",
+			"asc",
+			{ "caseSensitive": true, "minKeys": 2, "natural": true }
+		] /* sort-keys: warn about wrong order */,
+		"sort-keys-fix/sort-keys-fix": "warn" /* sort-keys-fix: automatically sort object keys */,
+		"sort-vars": "warn" /* sort-vars: warn about wrong order */,
+		"import/extensions": "off" /* bug: doesn't work with tsconfig path aliases */,
+		"@typescript-eslint/no-explicit-any": "off" /* annoyance: necessary sometimes */,
+		"@typescript-eslint/ban-ts-comment": "off" /* annoyance: this is intentional */
+	}
+}

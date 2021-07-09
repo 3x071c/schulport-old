@@ -1,0 +1,151 @@
+{
+	"name": "schulport",
+	"version": "1.0.0",
+	"description": "Erleichtert Schülern und Lehrern den Alltag",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/3x071c/Schulport.git"
+	},
+	"homepage": "https://schulport.com",
+	"bugs": {
+		"url": "https://github.com/3x071c/Schulport/issues"
+	},
+	"author": {
+		"name": "Victor Homic",
+		"email": "dev@3x071c.com",
+		"url": "https://3x071c.com"
+	},
+	"license": "AGPL-3.0-or-later",
+	"private": true,
+	"engines": {
+		"node": ">= 12.22.1"
+	},
+	"os": [
+		"linux"
+	],
+	"scripts": {
+		"build": "cross-env NODE_ENV=production next build",
+		"commit": "run-s format 'commit:*'",
+		"commit:1": "git add -A",
+		"commit:2": "cz",
+		"dev": "cross-env NODE_ENV=development next dev",
+		"eslint:fix": "pnpm eslint:report -- --fix",
+		"eslint:individual": "pnpm eslint:template -- --fix",
+		"eslint:report": "pnpm eslint:template -- .",
+		"eslint:template": "eslint --report-unused-disable-directives --no-error-on-unmatched-pattern --max-warnings 0 --ignore-path .gitignore --ext .tsx,.ts,.jsx,.js,.mjs,.cjs",
+		"export": "next export",
+		"format": "run-s prettier:fix eslint:fix stylelint:fix",
+		"lint": "run-s prettier:report eslint:report stylelint:report",
+		"preinstall": "pnpx -y only-allow pnpm",
+		"prepare": "husky install",
+		"prettier:fix": "pnpm prettier:template2 -- --write",
+		"prettier:individual": "pnpm prettier:template -- --write",
+		"prettier:report": "pnpm prettier:template2 -- --check",
+		"prettier:template": "prettier --plugin-search-dir=. --ignore-unknown --ignore-path=.gitignore",
+		"prettier:template2": "pnpm prettier:template -- . !pnpm-lock.yaml",
+		"prod": "run-s build start",
+		"start": "cross-env NODE_ENV=production next start",
+		"stylelint:fix": "pnpm stylelint:report -- --fix",
+		"stylelint:individual": "pnpm stylelint:template -- --fix",
+		"stylelint:report": "pnpm stylelint:template -- \"./**/*.{tsx,jsx,html,pcss,css}\"",
+		"stylelint:template": "stylelint --cache --report-needless-disables --report-invalid-scope-disables --report-descriptionless-disables --max-warnings 0 --ignore-path .gitignore"
+	},
+	"dependencies": {
+		"@capacitor/app": "1.0.2",
+		"@capacitor/core": "3.1.1",
+		"@capacitor/haptics": "1.0.2",
+		"@capacitor/keyboard": "1.0.2",
+		"@capacitor/status-bar": "1.0.2",
+		"@emotion/react": "^11.4.0",
+		"@ionic/react": "^5.6.11",
+		"@ionic/react-router": "^5.6.11",
+		"@testing-library/dom": "^8.1.0",
+		"@testing-library/jest-dom": "^5.14.1",
+		"@testing-library/react": "^12.0.0",
+		"@testing-library/user-event": "^13.1.9",
+		"clsx": "^1.1.1",
+		"immer": "^9.0.5",
+		"ionicons": "^5.5.2",
+		"jotai": "^1.1.3",
+		"next": "^11.0.1",
+		"npm-run-all": "^4.1.5",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-hook-form": "^7.11.0",
+		"react-router": "^5.2.0",
+		"react-router-dom": "^5.2.0",
+		"react-virtuoso": "^1.9.3",
+		"typescript": "^4.3.5",
+		"uuid": "^8.3.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.14.6",
+		"@capacitor/cli": "3.1.1",
+		"@commitlint/cli": "^12.1.4",
+		"@commitlint/config-conventional": "^12.1.4",
+		"@types/jest": "^26.0.24",
+		"@types/node": "^16.3.2",
+		"@types/react": "^17.0.14",
+		"@types/react-dom": "^17.0.9",
+		"@types/react-router": "^5.1.16",
+		"@types/react-router-dom": "^5.1.8",
+		"@types/uuid": "^8.3.1",
+		"@typescript-eslint/eslint-plugin": "^4.28.3",
+		"@typescript-eslint/parser": "^4.28.3",
+		"autoprefixer": "^10.3.1",
+		"browserslist": "^4.16.6",
+		"commitizen": "^4.2.4",
+		"cross-env": "^7.0.3",
+		"cssnano": "^5.0.6",
+		"cssnano-preset-advanced": "^5.1.3",
+		"cz-conventional-changelog": "^3.3.0",
+		"eslint": "^7.30.0",
+		"eslint-config-airbnb": "^18.2.1",
+		"eslint-config-airbnb-typescript": "^12.3.1",
+		"eslint-config-next": "^11.0.1",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.23.4",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-react": "^7.24.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+		"eslint-plugin-sort-keys-fix": "^1.1.1",
+		"husky": "^7.0.1",
+		"lint-staged": "^11.0.1",
+		"postcss": "^8.3.5",
+		"postcss-flexbugs-fixes": "^5.0.2",
+		"postcss-import": "^14.0.2",
+		"postcss-preset-env": "^6.7.0",
+		"prettier": "^2.3.2",
+		"prettier-plugin-pkg": "^0.10.0",
+		"prettier-plugin-sh": "^0.7.1",
+		"stylelint": "^13.13.1",
+		"stylelint-config-prettier": "^8.0.2",
+		"stylelint-config-recommended": "^5.0.0",
+		"tailwindcss": "^2.2.4",
+		"typescript": "^4.3.5"
+	},
+	"browserslist": {
+		"production": [
+			"defaults",
+			"Firefox ESR",
+			"not dead"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
+	},
+	"lint-staged": {
+		"*": "pnpm prettier:individual",
+		"*.{tsx,ts,jsx,js,mjs,cjs}": "pnpm eslint:individual",
+		"*.{tsx,jsx,html,pcss,css}": "pnpm stylelint:individual"
+	}
+}

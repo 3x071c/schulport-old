@@ -1,0 +1,17 @@
+name: 'Card moved'
+
+on:
+    project_card:
+        types:
+            - created
+            - moved
+
+jobs:
+    triage:
+        name: Apply a label based on project card column
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run the auto-card-labeler action
+              uses: technote-space/auto-card-labeler@v1
+              with:
+                  GITHUB_TOKEN: ${{ secrets.bot }}

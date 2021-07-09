@@ -1,0 +1,7 @@
+{
+	"name": "Schulport",
+	"integrations": {
+		"capacitor": {}
+	},
+	"type": "react"
+}
