@@ -4,8 +4,8 @@ on:
     - push
 
 jobs:
-    dev-ci:
-        name: Development CI
+    ci:
+        name: Continuous Integration
         runs-on: ubuntu-latest
         steps:
             - name: Checkout the current repository
@@ -28,24 +28,6 @@ jobs:
               run: pnpm test
               env:
                   CI: true
-    prod-ci:
-        name: Production CI
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout the current repository
-              uses: actions/checkout@v2
-              with:
-                  fetch-depth: 0
-            - name: Setup NodeJS 16
-              uses: actions/setup-node@v2
-              with:
-                  node-version: 16
-            - name: Configure Node and npm
-              run: npm set-script prepare ''
-            - name: Install pnpm
-              run: npm run ci:pnpm
-            - name: Install dependencies
-              run: pnpm ci:prod
             - name: Run Build
               run: pnpm build
               env:
