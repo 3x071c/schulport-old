@@ -7,7 +7,7 @@ export const images = [
 export const homeItems = [
 	{
 		author: 'Herr Ulshöfer',
-		authorAvatar: '/img/uls.jpg',
+		authorAvatar: 'https://lsg.musin.de/homepage/images/LSG/Menschen/Schulleitung/herrlaslop7.jpg',
 		id: 1,
 		image: images[0],
 		text: 'Hier ein Link zum Stundenplan, der ab nächster Woche für alle Schüler*innen der Q11...',
@@ -16,7 +16,7 @@ export const homeItems = [
 	},
 	{
 		author: 'Herr Sauer',
-		authorAvatar: '/img/ref.jpg',
+		authorAvatar: 'https://lsg.musin.de/homepage/images/LSG/Menschen/Schulleitung/herrlaslop7.jpg',
 		id: 2,
 		image: images[1],
 		text: 'Liebe Schülerinnen und Schüler des Religionskurses,...',
@@ -25,7 +25,7 @@ export const homeItems = [
 	},
 	{
 		author: 'Frau Nagele',
-		authorAvatar: '/img/nag.jpg',
+		authorAvatar: 'https://lsg.musin.de/homepage/images/LSG/Menschen/Schulleitung/herrlaslop7.jpg',
 		id: 3,
 		image: images[2],
 		text: 'Liebe KursteilnehmerInnen! Leider hat Sie Frau Wurzel nicht vor Ort angetroffen! Wenn im Vertretungsplan steht "Vertretung" und nicht Entfall haben Sie zu erscheinen!...',
