@@ -1,8 +1,7 @@
 /* eslint-disable sort-keys */
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 const dev = {
-	'postcss-import': {},
-	'tailwindcss/nesting': {},
+	// 'tailwindcss/nesting': {},
 	'tailwindcss': {},
 	'postcss-flexbugs-fixes': {},
 	'postcss-preset-env': {
@@ -11,7 +10,7 @@ const dev = {
 		},
 		features: {
 			'custom-properties': false,
-			'nesting-rules': false,
+			// 'nesting-rules': false,
 		},
 		stage: 2,
 	},
