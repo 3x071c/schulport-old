@@ -26,7 +26,7 @@
 	"scripts": {
 		"build": "cross-env NODE_ENV=production next build",
 		"ci:dev": "pnpm install --frozen-lockfile",
-		"ci:install_pnpm": "npm install --global pnpm@latest",
+		"ci:pnpm": "npm install --global pnpm@latest",
 		"ci:prod": "pnpm install --frozen-lockfile --prod",
 		"commit": "run-s format 'commit:*'",
 		"commit:1": "git add -A",
