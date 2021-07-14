@@ -16,7 +16,7 @@ jobs:
             - name: 'Run the lock-threads action'
               uses: dessant/lock-threads@v2
               with:
-                  github-token: ${{ secrets.bot }}
+                  github-token: ${{ secrets.GITHUB_TOKEN }}
                   issue-lock-inactive-days: '7'
                   issue-exclude-created-before: ''
                   issue-exclude-labels: ''
