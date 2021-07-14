@@ -4,8 +4,32 @@ on:
     - push
 
 jobs:
-    ci:
-        name: Test
+    dev-ci:
+        name: Development CI
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout the current repository
+              uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+            - name: Setup NodeJS 16
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 16
+            - name: Install pnpm
+              run: npm run ci:pnpm
+            - name: Install dependencies
+              run: pnpm ci:dev
+            - name: Run Linters
+              run: pnpm lint
+              env:
+                  CI: true
+            - name: Run Tests
+              run: pnpm test
+              env:
+                  CI: true
+    prod-ci:
+        name: Production CI
         runs-on: ubuntu-latest
         steps:
             - name: Checkout the current repository
@@ -22,7 +46,7 @@ jobs:
               run: npm run ci:pnpm
             - name: Install dependencies
               run: pnpm ci:prod
-            - name: Run Tests
-              run: pnpm test
+            - name: Run Build
+              run: pnpm build
               env:
                   CI: true
