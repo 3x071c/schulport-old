@@ -85,5 +85,9 @@
 		"fallbackPolling": "dynamicPriority"
 	},
 	"include": ["src/**/*", "src/**/.*"],
-	"exclude": ["node_modules"]
+	"exclude": ["node_modules"],
+	"typedocOptions": {
+		"entryPoints": ["src/components/"],
+		"out": "docs"
+	}
 }
