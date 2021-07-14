@@ -1,7 +1,7 @@
 {
 	"name": "schulport",
 	"version": "1.0.0",
-	"description": "Erleichtert Schülern und Lehrern den Alltag",
+	"description": "Schulport makes student life easier",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/3x071c/Schulport.git"
@@ -73,7 +73,7 @@
 		"stylelint:template": "stylelint --cache --report-needless-disables --report-invalid-scope-disables --report-descriptionless-disables --max-warnings 0 --ignore-path .gitignore",
 		"submodule": "git submodule update --remote",
 		"sync": "run-s -c format wiki submodule commit pnpm pull push",
-		"test": "exit 0",
+		"test": "jest",
 		"web": "run-s build export",
 		"wiki": "cd wiki && run-s wiki"
 	},
@@ -120,6 +120,7 @@
 		"@typescript-eslint/eslint-plugin": "^4.28.3",
 		"@typescript-eslint/parser": "^4.28.3",
 		"autoprefixer": "^10.3.1",
+		"babel-jest": "^27.0.6",
 		"browserslist": "^4.16.6",
 		"commitizen": "^4.2.4",
 		"cssnano": "^5.0.6",
@@ -138,6 +139,7 @@
 		"eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
 		"eslint-plugin-sort-keys-fix": "^1.1.1",
 		"husky": "^7.0.1",
+		"identity-obj-proxy": "^3.0.0",
 		"lint-staged": "^11.0.1",
 		"postcss": "^8.3.5",
 		"postcss-fail-on-warn": "^0.2.1",
