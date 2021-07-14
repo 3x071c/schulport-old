@@ -1,9 +1,9 @@
 <h1 align="center" style="border: none; padding: 0; margin: 0;">🏫 LSG Schülerportal 🧑‍🎓</h1>
 <h3 align="center"style="margin: 10px;">Cross-platform React app for students of the Louise-Schroeder-Gymnasium</h3>
 <p align="center" style="margin: 0; padding: 0;">
-  <a href="COPYING"><img src="https://img.shields.io/github/license/lsglab/portal" alt="GitHub license badge" /></a>
-  <a href="https://github.com/lsglab/portal/graphs/commit-activity"><img src="https://img.shields.io/github/commit-activity/m/lsglab/portal" alt="GitHub commit activity badge" /></a>
-  <a href="https://github.com/lsglab/portal/graphs/commit-activity"><img src="https://img.shields.io/github/last-commit/lsglab/portal" alt="GitHub last commit badge" /></a>
+  <a href="COPYING"><img src="https://img.shields.io/github/license/3x071c/Schulport" alt="GitHub license badge" /></a>
+  <a href="https://github.com/3x071c/Schulport/graphs/commit-activity"><img src="https://img.shields.io/github/commit-activity/m/3x071c/Schulport" alt="GitHub commit activity badge" /></a>
+  <a href="https://github.com/3x071c/Schulport/graphs/commit-activity"><img src="https://img.shields.io/github/last-commit/3x071c/Schulport" alt="GitHub last commit badge" /></a>
 </p>
 <hr style="height: 2px; margin: 5px;" />
 <p align="center">
