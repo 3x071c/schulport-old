@@ -1,4 +1,4 @@
-import { IonApp, IonIcon, IonRouterOutlet, IonSplitPane } from '@ionic/react';
+import { IonApp, IonRouterOutlet, IonSplitPane } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import { atom, useAtom } from 'jotai';
@@ -14,7 +14,6 @@ export default function App(): JSX.Element {
 			<IonReactRouter>
 				<IonSplitPane contentId='main'>
 					<Menu mount={mount} />
-					<ion-icon name='alarm-outline' />
 					<IonRouterOutlet id='main'>
 						<Route path={mount}>
 							<Tabs mount={mount} />
