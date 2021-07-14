@@ -14,7 +14,9 @@
 		"**/pnpm-lock.yaml": true,
 		"**/*cache": true,
 		"**/.czrc": true,
-		"**/COPYING": true
+		"**/COPYING": true,
+		"**/.next": true,
+		"**/docs": true
 	},
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"prettier.requireConfig": true,
