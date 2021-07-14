@@ -52,6 +52,8 @@ export default function Menu({ mount }: { mount: string }): JSX.Element {
 			</IonHeader>
 			<IonContent>
 				<IonList>
+					{/* tabs.map maps the atom-array tabsAtom to their own Ion Items */}
+					{/* IonMenuToggle is being used to constantly keep the menu open */}
 					{tabs.map(({ url, icon, title, id }) => (
 						<IonMenuToggle autoHide={false} key={id}>
 							<IonItem routerLink={mount + url} routerDirection='none' detail={false} lines='none'>

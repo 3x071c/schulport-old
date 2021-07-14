@@ -48,6 +48,7 @@ const Notifications = ({ open, onDidDismiss }: { open: boolean; onDidDismiss: an
 					</IonToolbar>
 				</IonHeader>
 				<IonList>
+					{/* notifications.map maps notification atoms to custom Notification Items */}
 					{notifications.map(({ title, when }, index) => (
 						// eslint-disable-next-line react/no-array-index-key
 						<NotificationItem title={title} when={when} key={index} />

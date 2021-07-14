@@ -27,6 +27,7 @@ export default function Lists(): JSX.Element {
 						<IonTitle size='large'>Hausaufgaben</IonTitle>
 					</IonToolbar>
 				</IonHeader>
+				{/* lists.map maps list Atoms to custom ListEntrys */}
 				{lists.map(({ id, name }) => (
 					<>
 						<ListEntry name={name} key={id} />

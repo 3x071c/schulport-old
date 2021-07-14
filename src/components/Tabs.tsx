@@ -8,6 +8,7 @@ export default function Tabs({ mount }: { mount: string }): JSX.Element {
 
 	return (
 		<IonTabs>
+			{/* this tabs.map maps the tabs from Menu to their corresponding links */}
 			<IonRouterOutlet>
 				{tabs.map(({ component, url, id }) => (
 					<Route path={mount + url} component={component} exact key={id} />
@@ -16,6 +17,7 @@ export default function Tabs({ mount }: { mount: string }): JSX.Element {
 					<Redirect to={mount + tabs[0].url} />
 				</Route>
 			</IonRouterOutlet>
+			{/* this tabs.map maps the tabs from Menu to their corresponding spots in the bottom TabBar */}
 			<IonTabBar slot='bottom'>
 				{tabs.map(({ url, icon, title, id }) => (
 					<IonTabButton tab={title.toLowerCase() + id.substring(0, 3)} href={mount + url} key={id}>

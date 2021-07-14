@@ -1,5 +1,7 @@
+// import { IonContent, IonicIcon, IonList } from '@ionic/react';
 import Card from '$components/Card';
 import Image from 'next/image';
+import React from 'react';
 
 export default function FeedCard({
 	title,

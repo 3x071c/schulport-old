@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import {
 	IonButton,
 	IonButtons,
@@ -45,6 +46,7 @@ export default function Feed(): JSX.Element {
 					</IonToolbar>
 				</IonHeader>
 				<Notifications open={showNotifications} onDidDismiss={() => setShowNotifications(false)} />
+				{/* homeItems.map maps homeItems Atoms to custom FeedCards */}
 				{homeItems.map((item) => (
 					<FeedCard {...item} key={item.id} />
 				))}
