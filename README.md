@@ -1,5 +1,5 @@
 <h1 align="center" style="border: none; padding: 0; margin: 0;">🏫 LSG Schülerportal 🧑‍🎓</h1>
-<h3 align="center"style="margin: 10px;">Cross-platform application for students of the Louise-Schroeder-Gymnasium</h3>
+<h3 align="center"style="margin: 10px;">Cross-platform React app for students of the Louise-Schroeder-Gymnasium</h3>
 <p align="center" style="margin: 0; padding: 0;">
   <a href="COPYING"><img src="https://img.shields.io/github/license/lsglab/portal" alt="GitHub license badge" /></a>
   <a href="https://github.com/lsglab/portal/graphs/commit-activity"><img src="https://img.shields.io/github/commit-activity/m/lsglab/portal" alt="GitHub commit activity badge" /></a>
@@ -13,13 +13,11 @@
 
 ## Introduction
 
-The LSG Schülerportal is a cross-platform application, written using Web Technologies in [Expo](https://expo.io/), [React Native](https://reactnative.dev/) and [NextJS](https://nextjs.org/) with the [NativeBase](https://nativebase.io/) UI toolkit, for pupils to check important dates, events, homework and their substitution schedule.
+The LSG Schülerportal is a cross-platform application, written using [Web technologies](https://developer.mozilla.org/en-US/docs/Learn) in [TypeScript](https://www.typescriptlang.org/) (a typed superset/compiler of JavaScript, the scripting language that powers most of the web), [React](https://reactjs.org/) (a declarative, component-based, reactive UI library), [NextJS](https://nextjs.org/) (a framework built around React), [Ionic](https://ionicframework.com/)/[Capacitor](https://capacitorjs.com/) (a cross-platform hybrid web-app wrapper for native capabilities and native-feel components), [TailwindCSS](https://tailwindcss.com/) (a compiled, utility-first CSS framework) and [jotai](https://jotai.pmnd.rs/) (a React state management library). It enables pupils to conveniently check important dates, events, homework and their substitution schedule, with more to come.
 
-## Todo
+## Documentation
 
--   This file (`README.md`)
--   Documentation
--   Extending the application itself
+Extensive documentation can be found in the [wiki](./wiki/).
 
 ## License
 
