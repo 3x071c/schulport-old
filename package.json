@@ -33,6 +33,7 @@
 		"commit:2": "cz",
 		"deploy": "run-s web native",
 		"dev": "cross-env NODE_ENV=development next dev",
+		"documentation": "typedoc",
 		"eslint:fix": "pnpm eslint:report -- --fix",
 		"eslint:individual": "pnpm eslint:template -- --fix",
 		"eslint:report": "pnpm eslint:template -- .",
@@ -150,6 +151,7 @@
 		"stylelint-config-prettier": "^8.0.2",
 		"stylelint-config-recommended": "^5.0.0",
 		"tailwindcss": "^2.2.4",
+		"typedoc": "^0.21.4",
 		"typescript": "^4.3.5"
 	},
 	"browserslist": {

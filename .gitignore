@@ -240,6 +240,7 @@ $RECYCLE.BIN/
 *cache
 .env*
 .husky/_
+docs/
 # === End of generic rules ===
 # === Start of specific rules ===
 build
