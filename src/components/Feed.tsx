@@ -14,6 +14,7 @@ import { homeItems as homeItemsOrigin } from '$mock/index';
 import { notificationsOutline } from 'ionicons/icons';
 import FeedCard from '$components/FeedCard';
 import Notifications from '$components/Notifications';
+import React from 'react';
 
 export const homeItemsAtom = atom(homeItemsOrigin);
 export const showNotificationsAtom = atom(false);
