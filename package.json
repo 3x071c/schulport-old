@@ -52,7 +52,7 @@
 		"stylelint:individual": "pnpm stylelint:template -- --fix",
 		"stylelint:report": "pnpm stylelint:template -- \"./**/*.{tsx,jsx,html,pcss,css}\"",
 		"stylelint:template": "stylelint --cache --report-needless-disables --report-invalid-scope-disables --report-descriptionless-disables --max-warnings 0 --ignore-path .gitignore",
-		"test": "run-s lint"
+		"test": "run-s lint build"
 	},
 	"dependencies": {
 		"@capacitor/app": "1.0.2",
