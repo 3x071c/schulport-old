@@ -1,10 +1,11 @@
-import { IonContent, IonHeader, IonItem, IonLabel, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonCheckbox, IonContent, IonHeader, IonItem, IonLabel, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { atom, useAtom } from 'jotai';
 import { lists as listsOrigin } from '$mock/index';
 
 const ListEntry = ({ name }: { name: string }) => (
 	<IonItem className='list-entry'>
 		<IonLabel>{name}</IonLabel>
+		<IonCheckbox slot='end' />
 	</IonItem>
 );
 
