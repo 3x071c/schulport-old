@@ -88,6 +88,6 @@
 	"exclude": ["node_modules"],
 	"typedocOptions": {
 		"entryPoints": ["src/components/"],
-		"out": "docs"
+		"out": "api"
 	}
 }

@@ -239,9 +239,9 @@ $RECYCLE.BIN/
 *.pem
 *cache
 .env*
-.husky/_
-docs/
 # === End of generic rules ===
 # === Start of specific rules ===
-build
+.husky/_/
+/api/
+build/
 # === End of specific rules ===
