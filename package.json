@@ -24,6 +24,7 @@
 		"linux"
 	],
 	"scripts": {
+		"api": "typedoc",
 		"build": "cross-env NODE_ENV=production next build",
 		"ci:dev": "pnpm install --frozen-lockfile",
 		"ci:pnpm": "npm install --global pnpm@latest",
@@ -66,7 +67,7 @@
 		"prettier:template2": "pnpm prettier:template -- . !pnpm-lock.yaml",
 		"prod": "run-s build start",
 		"pull": "git pull --all --rebase",
-		"push": "git push --prune",
+		"push": "git push --prune -u origin HEAD",
 		"report": "run-s lint",
 		"stage": "git add -A",
 		"start": "cross-env NODE_ENV=production next start",
@@ -78,8 +79,7 @@
 		"sync": "run-s -c format wiki documentation submodule commit pnpm pull push",
 		"test": "exit 0",
 		"web": "run-s build export",
-		"wiki": "cd wiki && run-s routine",
-		"api": "typedoc"
+		"wiki": "cd wiki && run-s routine"
 	},
 	"dependencies": {
 		"@capacitor/app": "1.0.2",

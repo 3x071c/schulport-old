@@ -3,6 +3,6 @@ path = wiki
 url = https://github.com/3x071c/Schulport.wiki.git
 branch = master
 [submodule "docs"]
-	path = docs
-	url = https://github.com/3x071c/schulport-docs
-	branch = trunk
+path = docs
+url = https://github.com/3x071c/schulport-docs
+branch = trunk
