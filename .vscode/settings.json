@@ -12,11 +12,7 @@
 		"**/.DS_Store": true,
 		"**/node_modules": true,
 		"**/pnpm-lock.yaml": true,
-		"**/*cache": true,
-		"**/.czrc": true,
-		"**/COPYING": true,
-		"**/.next": true,
-		"**/docs": true
+		"**/*cache": true
 	},
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"prettier.requireConfig": true,
