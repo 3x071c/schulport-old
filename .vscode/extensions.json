@@ -1,0 +1,33 @@
+{
+	"recommendations": [
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-complete-tag",
+		"formulahendry.auto-rename-tag",
+		"mgmcdermott.vscode-language-babel",
+		"coenraads.bracket-pair-colorizer-2",
+		"streetsidesoftware.code-spell-checker",
+		"naumovs.color-highlight",
+		"salbert.comment-ts",
+		"hookyqr.jsdoctagcomplete",
+		"pranaygp.vscode-css-peek",
+		"editorconfig.editorconfig",
+		"dbaeumer.vscode-eslint",
+		"tamasfe.even-better-toml",
+		"adrianwilczynski.format-selection-as-html",
+		"streetsidesoftware.code-spell-checker-german",
+		"mhutchie.git-graph",
+		"bierner.github-markdown-preview",
+		"eamodio.gitlens",
+		"vincaslt.highlight-matching-tag",
+		"pkief.material-icon-theme",
+		"leizongmin.node-module-intellisense",
+		"christian-kohler.npm-intellisense",
+		"christian-kohler.path-intellisense",
+		"csstools.postcss",
+		"esbenp.prettier-vscode",
+		"stylelint.vscode-stylelint",
+		"bradlc.vscode-tailwindcss",
+		"austenc.tailwind-docs",
+		"visualstudioexptteam.vscodeintellicode"
+	]
+}

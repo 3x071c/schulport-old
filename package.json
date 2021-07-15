@@ -1,14 +1,14 @@
 {
 	"name": "schulport",
-	"version": "1.0.0",
-	"description": "Erleichtert Schülern und Lehrern den Alltag",
+	"version": "0.0.0",
+	"description": "Conveniently check important dates, events, homework and substitution schedule for pupils",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/3x071c/Schulport.git"
+		"url": "https://github.com/3x071c/schulport.git"
 	},
 	"homepage": "https://schulport.com",
 	"bugs": {
-		"url": "https://github.com/3x071c/Schulport/issues"
+		"url": "https://github.com/3x071c/schulport/issues"
 	},
 	"author": {
 		"name": "Victor Homic",
@@ -24,6 +24,7 @@
 		"linux"
 	],
 	"scripts": {
+		"api": "typedoc",
 		"build": "cross-env NODE_ENV=production next build",
 		"ci:dev": "pnpm install --frozen-lockfile",
 		"ci:pnpm": "npm install --global pnpm@latest",
@@ -33,7 +34,7 @@
 		"commit:2": "cz",
 		"deploy": "run-s web native",
 		"dev": "cross-env NODE_ENV=development next dev",
-		"documentation": "typedoc",
+		"documentation": "cd docs && run-s routine",
 		"eslint:fix": "pnpm eslint:report -- --fix",
 		"eslint:individual": "pnpm eslint:template -- --fix",
 		"eslint:report": "pnpm eslint:template -- .",
@@ -50,7 +51,9 @@
 		"new:1": "npm install -g pnpm@latest",
 		"new:2": "pnpm install",
 		"new:3": "git submodule init",
-		"new:4": "cd wiki && pnpm install",
+		"new:4": "pnpm submodule",
+		"new:5": "cd wiki && pnpm install",
+		"new:6": "cd docs && pnpm install",
 		"pnpm": "run-s -c 'pnpm:*'",
 		"pnpm:1": "pnpm update -L",
 		"pnpm:2": "run-s stage",
@@ -64,7 +67,7 @@
 		"prettier:template2": "pnpm prettier:template -- . !pnpm-lock.yaml",
 		"prod": "run-s build start",
 		"pull": "git pull --all --rebase",
-		"push": "git push --prune",
+		"push": "git push --prune -u origin HEAD",
 		"report": "run-s lint",
 		"stage": "git add -A",
 		"start": "cross-env NODE_ENV=production next start",
@@ -73,10 +76,10 @@
 		"stylelint:report": "pnpm stylelint:template -- \"./**/*.{tsx,jsx,html,pcss,css}\"",
 		"stylelint:template": "stylelint --cache --report-needless-disables --report-invalid-scope-disables --report-descriptionless-disables --max-warnings 0 --ignore-path .gitignore",
 		"submodule": "git submodule update --remote",
-		"sync": "run-s -c format wiki submodule commit pnpm pull push",
+		"sync": "run-s -c format wiki documentation submodule commit pull push",
 		"test": "exit 0",
 		"web": "run-s build export",
-		"wiki": "cd wiki && run-s wiki"
+		"wiki": "cd wiki && run-s routine"
 	},
 	"dependencies": {
 		"@capacitor/app": "1.0.2",

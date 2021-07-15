@@ -1,9 +1,9 @@
 <h1 align="center" style="border: none; padding: 0; margin: 0;">🏫 Schulport 🧑‍🎓</h1>
 <h3 align="center"style="margin: 10px;">Cross-platform React app for students in Germany</h3>
 <p align="center" style="margin: 0; padding: 0;">
-  <a href="COPYING"><img src="https://img.shields.io/github/license/3x071c/Schulport" alt="GitHub license badge" /></a>
-  <a href="https://github.com/3x071c/Schulport/graphs/commit-activity"><img src="https://img.shields.io/github/commit-activity/m/3x071c/Schulport" alt="GitHub commit activity badge" /></a>
-  <a href="https://github.com/3x071c/Schulport/graphs/commit-activity"><img src="https://img.shields.io/github/last-commit/3x071c/Schulport" alt="GitHub last commit badge" /></a>
+  <a href="COPYING"><img src="https://img.shields.io/github/license/3x071c/schulport" alt="GitHub license badge" /></a>
+  <a href="https://github.com/3x071c/schulport/graphs/commit-activity"><img src="https://img.shields.io/github/commit-activity/m/3x071c/schulport" alt="GitHub commit activity badge" /></a>
+  <a href="https://github.com/3x071c/schulport/graphs/commit-activity"><img src="https://img.shields.io/github/last-commit/3x071c/schulport" alt="GitHub last commit badge" /></a>
 </p>
 <hr style="height: 2px; margin: 5px;" />
 <p align="center">
@@ -18,13 +18,13 @@ Schulport is a cross-platform application, written using [Web technologies](http
 
 ## Documentation
 
-Extensive documentation can be found in the [wiki](https://github.com/3x071c/Schulport/wiki)
+Extensive documentation can be found in the [wiki](wiki)
 
 ## Development
 
 ### System Requirements
 
-This bot is written in [TypeScript](https://www.typescriptlang.org/), a typed superset of JavaScript. Some scripts included with this repository will probably not work on Windows ([m](https://tinyurl.com/nuub2bq)[y](https://tinyurl.com/y2emej63)[ ](https://tinyurl.com/y2lzznux)[c](https://tinyurl.com/y3v8vo5a)[o](https://tinyurl.com/y4qcfkw3)[n](https://tinyurl.com/y5gm9ysv)[d](https://tinyurl.com/y69uplwl)[o](https://tinyurl.com/yygc57ta)[l](https://tinyurl.com/yynoa7ql)[e](https://tinyurl.com/y3shavwn)[n](https://tinyurl.com/yxladmrj)[c](https://tinyurl.com/y3yxymqr)[e](https://tinyurl.com/y2c6alo5)[s](https://tinyurl.com/y5qtqr6p)). Make sure you have a recent `node` and `npm` version installed before proceeding (Install the latest non-LTS node version for development [here](https://nodejs.org/)).
+This app is written in [TypeScript](https://www.typescriptlang.org/), a typed superset of JavaScript. Some scripts included with this repository will probably not work on Windows ([m](https://tinyurl.com/nuub2bq)[y](https://tinyurl.com/y2emej63)[ ](https://tinyurl.com/y2lzznux)[c](https://tinyurl.com/y3v8vo5a)[o](https://tinyurl.com/y4qcfkw3)[n](https://tinyurl.com/y5gm9ysv)[d](https://tinyurl.com/y69uplwl)[o](https://tinyurl.com/yygc57ta)[l](https://tinyurl.com/yynoa7ql)[e](https://tinyurl.com/y3shavwn)[n](https://tinyurl.com/yxladmrj)[c](https://tinyurl.com/y3yxymqr)[e](https://tinyurl.com/y2c6alo5)[s](https://tinyurl.com/y5qtqr6p)). Make sure you have a recent `node` and `npm` version installed before proceeding (Install the latest non-LTS node version for development [here](https://nodejs.org/)).
 
 ### Environment
 
