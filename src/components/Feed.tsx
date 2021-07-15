@@ -14,6 +14,7 @@ import { homeItems as homeItemsOrigin } from '$mock/index';
 import { notificationsOutline } from 'ionicons/icons';
 import FeedCard from '$components/FeedCard';
 import Notifications from '$components/Notifications';
+import React from 'react';
 
 export const homeItemsAtom = atom(homeItemsOrigin);
 export const showNotificationsAtom = atom(false);
@@ -47,6 +48,7 @@ export default function Feed(): JSX.Element {
 				{homeItems.map((item) => (
 					<FeedCard {...item} key={item.id} />
 				))}
+				{/* Inhalte aus homeItems werden auf custom FeedCards gemapped */}
 			</IonContent>
 		</IonPage>
 	);
