@@ -29,6 +29,7 @@ export default function Lists(): JSX.Element {
 				{lists.map(({ id, name }) => (
 					<ListEntry name={name} key={id} />
 				))}
+				{/* Inhalte aus lists werden auf custom ListEntries gemapped */}
 			</IonContent>
 		</IonPage>
 	);

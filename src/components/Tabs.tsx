@@ -12,6 +12,7 @@ export default function Tabs({ mount }: { mount: string }): JSX.Element {
 				{tabs.map(({ component, url, id }) => (
 					<Route path={mount + url} component={component} exact key={id} />
 				))}
+				{/* Routing setup für tabs */}
 				<Route path={mount} exact>
 					<Redirect to={mount + tabs[0].url} />
 				</Route>
@@ -23,6 +24,7 @@ export default function Tabs({ mount }: { mount: string }): JSX.Element {
 						<IonLabel>{title}</IonLabel>
 					</IonTabButton>
 				))}
+				{/* Inhalte aus tabs werden auf IonTabButton gemapped */}
 			</IonTabBar>
 		</IonTabs>
 	);

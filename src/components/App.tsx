@@ -5,6 +5,7 @@ import { atom, useAtom } from 'jotai';
 import Menu from '$components/Menu';
 import Tabs from '$components/Tabs';
 
+/** Nutzung von Jotai Atoms um extra re-renders zu verhindern */
 export const mountAtom = atom('/app');
 
 export default function App(): JSX.Element {
@@ -14,6 +15,7 @@ export default function App(): JSX.Element {
 			<IonReactRouter>
 				<IonSplitPane contentId='main'>
 					<Menu mount={mount} />
+					{/* IonRouterOutlet stellt einen container für ionic pages bereit */}
 					<IonRouterOutlet id='main'>
 						<Route path={mount}>
 							<Tabs mount={mount} />
