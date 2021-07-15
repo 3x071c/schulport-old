@@ -52,6 +52,7 @@ const Notifications = ({ open, onDidDismiss }: { open: boolean; onDidDismiss: an
 						// eslint-disable-next-line react/no-array-index-key
 						<NotificationItem title={title} when={when} key={index} />
 					))}
+					{/* Inhalte aus Notifications werden auf custom NotificationItems gemapped */}
 				</IonList>
 			</IonContent>
 		</IonModal>

@@ -52,6 +52,7 @@ export default function Menu({ mount }: { mount: string }): JSX.Element {
 			</IonHeader>
 			<IonContent>
 				<IonList>
+					{/* Nutzung von IonMenuToggle um das Menü konstant geöffnet zu lassen */}
 					{tabs.map(({ url, icon, title, id }) => (
 						<IonMenuToggle autoHide={false} key={id}>
 							<IonItem routerLink={mount + url} routerDirection='none' detail={false} lines='none'>
@@ -60,6 +61,7 @@ export default function Menu({ mount }: { mount: string }): JSX.Element {
 							</IonItem>
 						</IonMenuToggle>
 					))}
+					{/* Inhalte aus tabs werden auf IonItems gemapped */}
 				</IonList>
 			</IonContent>
 		</IonMenu>

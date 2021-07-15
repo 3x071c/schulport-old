@@ -1,6 +1,8 @@
 import Card from '$components/Card';
 import Image from 'next/image';
+import React from 'react';
 
+//* Custom Formatierung für Feed-Komponenten */
 export default function FeedCard({
 	title,
 	type,
