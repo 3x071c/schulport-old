@@ -76,7 +76,7 @@
 		"stylelint:report": "pnpm stylelint:template -- \"./**/*.{tsx,jsx,html,pcss,css}\"",
 		"stylelint:template": "stylelint --cache --report-needless-disables --report-invalid-scope-disables --report-descriptionless-disables --max-warnings 0 --ignore-path .gitignore",
 		"submodule": "git submodule update --remote",
-		"sync": "run-s -c format wiki documentation submodule commit pnpm pull push",
+		"sync": "run-s -c format wiki documentation submodule commit pull push",
 		"test": "exit 0",
 		"web": "run-s build export",
 		"wiki": "cd wiki && run-s routine"
