@@ -11,8 +11,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Move the card
-              uses: alex-page/github-project-automation-plus@v0.2.4
+              uses: alex-page/github-project-automation-plus@v0.8.1
               with:
                   project: Development
                   column: Ready for review
-                  repo-token: ${{ secrets.GITHUB_TOKEN }}
+                  repo-token: ${{ secrets.WORKFLOW_TOKEN }}
