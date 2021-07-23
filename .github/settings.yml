@@ -5,9 +5,9 @@ repository:
     # The name of the repository. Changing this will rename the repository
     name: 'schulport-old'
     # A short description of the repository that will show up on GitHub
-    description: 'Conveniently check important dates, events, homework and substitution schedule for pupils'
+    description: 'Conveniently check important dates, events, homework and substitution schedule for pupils (old version in ionic)'
     # A URL with more information about the repository
-    homepage: 'https://schulport.com'
+    homepage: 'https://old.schulport.com'
     # A comma-separated list of topics to set on the repository
     topics: ''
     # Either `true` to make the repository private, or `false` to make it public.
