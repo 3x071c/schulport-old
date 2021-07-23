@@ -2,6 +2,7 @@ import { IonApp, IonRouterOutlet, IonSplitPane } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import { atom, useAtom } from 'jotai';
+import Login from '$components/Login';
 import Menu from '$components/Menu';
 import Tabs from '$components/Tabs';
 
@@ -15,10 +16,12 @@ export default function App(): JSX.Element {
 			<IonReactRouter>
 				<IonSplitPane contentId='main'>
 					<Menu mount={mount} />
-					{/* IonRouterOutlet stellt einen container für ionic pages bereit */}
 					<IonRouterOutlet id='main'>
 						<Route path={mount}>
 							<Tabs mount={mount} />
+						</Route>
+						<Route path='/login'>
+							<Login />
 						</Route>
 						<Route exact path='/'>
 							<Redirect to={mount} />
